@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table>
+                <h1>글 작성하기</h1>
+            <tr>
+                <td><label for="name"><b>작성자</b></label></td>
+                <td><input id="name" type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="id"><b>아이디</b></label></td>
+                <td><input id="id" type="text" name="id"></td>
+            </tr>
+            <tr>
+                <td><label for="email"><b>이메일</b></label></td>
+                <td><input id="email" type="text" name="email">
+                    <b>@</b>
+                    <select name="email">
+                        <option value="naver">naver.com</option>
+                        <option value="gmail">gmail.com</option>
+                        <option value="hanmail">hanmail.net</option>
+                        <option value="self">직접 입력</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cell"><b>휴대폰</b></label></td>
+                <td>
+                    <select name="number">
+                        <option value="010">010</option>
+                        <option value="070">070</option>
+                        <option value="032">032</option>
+                        <option value="080">080</option>
+                    </select>
+                    <b>-</b>
+                    <input id="cell" type="text" name="number">
+                    <b>-</b>
+                    <input id="cell" type="text" name="number">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="head"><b>글제목</b></label></td>
+                <td><input id="head" type="text" name="head"></td>
+            </tr>
+            <tr>
+                <td><label for="main"><b>내용</b></label></td>
+                <td><textarea name="main" id="main" cols="30" rows="10"></textarea>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">제출</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
